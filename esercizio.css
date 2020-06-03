@@ -1,0 +1,151 @@
+.ex-1-square {
+  transition: all 1s ease-out ;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+}
+
+.ex-2-square {
+  transition: all 1s ease-out ;
+}
+
+.ex-2-square:active {
+  width: 100% ;
+}
+
+
+.ex-3-square {
+  transition: all 1s ease-out ;
+}
+
+.ex-3-square:hover {
+  border-radius: 50%;
+}
+
+.ex-4-square {
+  transition: all 2s ease-out ;
+}
+
+.ex-4-square:hover {
+  filter: opacity(0%);
+}
+
+.ex-5-square {
+  transition: all 1s ease-in ;
+}
+
+.ex-5-square:hover {
+  transform: scale(1.5);
+}
+
+.ex-5-square:active {
+  transform: scale(0.5);
+}
+
+.ex-6-img {
+  transition: all 1s ease-in;
+}
+
+.ex-6-img:hover {
+  filter: grayscale(100%) ;
+}
+
+.ex-7-img {
+  transition: all 1s ease-in 1s;
+}
+
+.ex-7-img:hover {
+  filter: grayscale(100%) blur(20px);
+}
+
+.ex-8-img {
+  transition: all 1s ease-in 1s;
+}
+
+.ex-8-img:hover {
+  filter: invert(25%) saturate(100);
+  border-radius: 25%;
+}
+
+.ex-9-img {
+  transition: all 0.5s ease-in ;
+}
+
+.ex-9-img:hover {
+  filter: hue-rotate(100deg) drop-shadow(5px 10px 20px red);
+  border-radius: 10%;
+  transform: scale(1.5);
+}
+
+.ex-10-icon {
+ animation-name: rotazione ;
+ animation-duration: 2s ;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+
+}
+
+@keyframes rotazione {
+  0% {transform: rotate(0deg)  }
+  25% {transform: rotate(90deg)  }
+  50% {transform: rotate(180deg) }
+  75% {transform: rotate(270deg) }
+  100% {transform: rotate(360deg) }
+
+}
+
+
+.ex-11-icon:hover {
+  animation-name: rotazione2 ;
+  animation-duration: 2s ;
+  animation-timing-function: linear;
+
+}
+
+@keyframes rotazione2 {
+  0% {transform: rotate(0deg)  }
+  25% {transform: rotate(90deg)  }
+  50% {transform: rotate(180deg) }
+  75% {transform: rotate(270deg) }
+  100% {transform: rotate(0deg) }
+
+}
+
+.ex-12-top-white {
+  animation: botton1 4s linear infinite;
+}
+
+@keyframes botton1 {
+  0% {position: absolute; top: -10px; left: 20%; }
+  25% {position: absolute; top: -10px; left: 30%; }
+  50% {position: absolute; top: -10px; left: 50%; }
+  75% {position: absolute; top: -10px; left: 30%; }
+  100% {position: absolute; top: -10px; left: 20%; }
+}
+
+.ex-13-top-white {
+  animation: botton2 4s linear infinite;
+}
+
+@keyframes botton2 {
+  0% {position: absolute; top: -10px; left: 10%; }
+  20% {position: absolute; top: -10px; left: 99% ; }
+  40% {position: absolute; top: 60px; left: 99%; }
+  60% {position: absolute; top: 60px; left: -29%; }
+  80% {position: absolute; top: -10px; left: -29%; }
+  100% {position: absolute; top: -10px; left: 10%; }
+}
+
+.ex-13-bottom-white {
+  animation: botton3 4s linear infinite;
+}
+
+@keyframes botton3 {
+  0% {position: absolute; bottom: -10px; right: 20%; }
+  20% {position: absolute; bottom: -10px; right: 99% ; }
+  40% {position: absolute; bottom: 60px; right: 99%; }
+  60% {position: absolute; bottom: 60px; right: -29%; }
+  80% {position: absolute; bottom: -10px; right: -29%; }
+  100% {position: absolute; bottom: -10px; right: 20%; }
+}
